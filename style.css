@@ -1,0 +1,243 @@
+body{
+    background-color: #efefef;
+    color:black;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+hr{
+    height: 0;
+    border: none;
+    border-top: 1px solid rgb(222, 222, 222);
+}
+.clearfix::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+/* 导航条 */
+.topNavBar nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNavBar nav>ul>li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.topNavBar nav>ul>li>a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #b7b7b7;
+    display: block;
+    padding: 5px 0px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+.topNavBar nav>ul>li>a:hover{
+    border-bottom: 3px solid #e06567;
+}
+.topNavBar a{
+    float: left;
+}
+.topNavBar nav{
+    float: right;
+    padding: 3px 0px 4px 0px;
+}
+.topNavBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 0px;
+    width:100%; 
+}
+.topNavBar .topNavBar-inner{
+    padding: 0px 16px;
+}
+.topNavBar .logo{
+    font-size: 24px;
+    font-family: "Arial Black";
+    padding: 3px 0px 4px 0px;
+}
+.topNavBar .logo .rs{
+    margin-right: 4px;
+    color: #E6686a;
+}
+.topNavBar .logo .card{
+    color: #9a9da2;
+}
+/* 背景banner */
+.banner{
+    height: 515px;
+    background-image: url(./images/rs-cover.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* 用户卡片 */
+.userCard{
+    max-width: 940px;
+    /* border:1px solid red; */
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto; 
+    box-shadow: 1px 1px 5px 1px rgba(153,145,153,1);
+}
+.userCard .welcome{
+    background: #E6686a;
+    color: white;
+    display: inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+}
+.userCard .welcome .triangle{
+    position: absolute;
+    left: 6px;
+    bottom: -10px;
+    border: 10px solid transparent;
+    border-top: 0px;
+    border-left-color:#E6686a;
+}
+.userCard .picture{
+    float: left;
+}
+.userCard .text{
+    float: left;
+    margin-left:60px;
+    width: 465px;
+}
+.userCard .pictureAndText{
+    padding: 55px;
+}
+.userCard .text h1{
+   margin-top: 30px;
+}
+.userCard .text hr{
+    margin:20px 0px;
+ }
+.text dl dt,
+.text dl dd{
+    padding: 5px 0px;
+    float: left;
+}
+.userCard .text dl dt{
+    width: 26%;
+    font-weight: bold;
+}
+.userCard .text dl dd{
+    width: 74%;
+    color: #9da0a7; 
+}
+.userCard footer.media{
+    background-color: #E6686a;
+    text-align: center;
+}
+.userCard footer.media svg{
+    width: 28px;
+    height: 28px;
+    fill: white; 
+    vertical-align: top;
+}
+.userCard footer.media a{
+    margin:10px 15px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    padding: 7px 0px;
+    line-height: 28px;
+}
+.userCard footer.media a:hover{
+    background: #cf5d5f;
+}
+/* 下载按钮 */
+body> main{
+    margin-top:-350px;
+}
+main .downloadResume-wrapper{
+    text-align: center;
+    margin:36px 0px;
+}
+main .downloadResume{
+    display: inline-block;
+    border:1px solid #cfd1d3;
+    padding: 18px 60px;
+    color: #3d4451;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    background: #efefef;
+    border-radius: 2px;
+}
+main .downloadResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+}
+/* 自我介绍 */
+main > .selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    font-family: kai;
+    line-height: 1.8;
+    font-size: 18px;
+}
+/* 技能介绍 */
+section.skills{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+section.skills>h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+section.skills>h3{
+    font-size: 14px;
+    line-height: 1.1;
+}
+section.skills>ol{
+    list-style: none;
+    background: white;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+    padding: 42px 50px 10px;
+    margin-top: 40px;
+}
+section.skills ol>li{
+    float:left;
+    box-sizing: border-box;
+    width: 48%;
+}
+section.skills li:nth-child(even){
+    float: right;
+}
+section.skills .processBar{
+    background: #fae1e1;
+    height: 5px;
+    border-radius:2px;
+    margin: 4px 0 40px;
+}
+section.skills .processBar>.process{
+    background: #E6686a;
+    height: 100%;
+    border-radius:2px;
+}
